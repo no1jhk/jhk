@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="js/vegas/vegas.min.css">
-    <!-- <link rel="stylesheet" href="js/vegas/vegas.css"> -->
     <!-- 스크롤 애니메이션 0329 -->
     <link rel="stylesheet" href="css/animate.css">
 
@@ -21,9 +20,9 @@
     <script src="js/toggle.menu.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/vegas/vegas.min.js"></script>
-    <script src="js/viewportchecker.js"></script><!-- 스크롤 fx -->
-    <script src="js/main.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
 <![endif]-->
@@ -62,18 +61,18 @@
             <div class="menu-container">
                 <!--  GNB  -->
                 <ul class="menu visually-hidden">
-                    <li><a href="index.html">WORK</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="http://" target="_blank">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="/index.html">WORK</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/http://" target="_blank">BLOG</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
                 </ul><!--  //GNB  -->
             </div>
             <!-- LOGO TITLE -->
             <div class="title">
                 <div class="logo">
                     <div class="name">
-                        <a href="index.html">
-                            <img src="img/name.png" alt="JOON-HYUNG KIM DESIGN PORTFOLIO">
+                        <a href="/index.html">
+                            <img src="/img/name.png" alt="JOON-HYUNG KIM DESIGN PORTFOLIO">
                         </a>
                     </div>
                     <div class="intro">
@@ -207,7 +206,7 @@
         var _list_template = '\
         <ul id="boxlist"> \
           <li v-for="(item, index) in mainList" :key="item.id" class="item p_box02 js-scrollmotion_up" > \
-            <a class="main_item-link" :href="item.link"> \
+            <a class="main_item-link" :href="(detal_link + item.id)"> \
               <div class="box_title"> \
                 <p class="b_tit">{{ item.title }}</p> \
                 <p class="b_txt">{{ item.title_e }}</p> \
@@ -239,6 +238,7 @@
                     data: function() {
                         return {
                             mainList: mainData,
+                            detal_link: "/detal/detal_page.html?page="
                         }
                     },
 
@@ -248,9 +248,7 @@
                             return this.msg + " : computed";
                         },
                     },
-
                     template: _list_template,
-
                     /* 실행 함수 */
                     methods: {
                         tabClick: function($index) {}

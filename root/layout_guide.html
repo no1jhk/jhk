@@ -8,18 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>JHK RWD ReNEW 2017</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/layout.sub.css">
-    <link rel="stylesheet" href="js/vegas/vegas.min.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.sub.css">
+    <link rel="stylesheet" href="../js/vegas/vegas.min.css">
     <!-- 스크롤 애니메이션 0329 -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- <link rel="stylesheet" href="js/vegas/vegas.css"> -->
+    <link rel="stylesheet" href="../css/animate.css">
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
-    <script src="js/toggle.menu.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/vegas/vegas.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="../js/toggle.menu.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/vegas/vegas.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
     <!-- <script src="js/viewportchecker.js"></script> -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
@@ -43,7 +45,17 @@
         ga('send', 'pageview');
     </script>
 
-
+    <script>
+        var searchParams = new URLSearchParams(location.search);
+        var getPage = -1;
+        for (const param of searchParams) {
+            if (param[0] === "page") {
+                getPage = param[1];
+                break;
+            }
+        }
+        console.log(">>> : ", getPage);
+    </script>
     <!-- //header -->
 </head>
 
@@ -60,18 +72,18 @@
             <div class="menu-container">
                 <!--  GNB  -->
                 <ul class="menu visually-hidden">
-                    <li><a href="index.html">WORK</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="http://" target="_blank">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="/index.html">WORK</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/http://" target="_blank">BLOG</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
                 </ul><!--  //GNB  -->
             </div>
             <!-- LOGO TITLE -->
             <div class="title">
                 <div class="logo">
                     <div class="name">
-                        <a href="index.html">
-                            <img src="img/name.png" alt="JOON-HYUNG KIM DESIGN PORTFOLIO">
+                        <a href="/index.html">
+                            <img src="/img/name.png" alt="JOON-HYUNG KIM DESIGN PORTFOLIO">
                         </a>
                     </div>
                     <div class="intro">
@@ -94,8 +106,8 @@
         <!--  레이아웃변경 버튼 -->
         <div class="layout_btn">
             <ul class="l_btn">
-                <li class="typeA"><a href="#"><img src="img/layout_a_ov.png" alt=""></a></li>
-                <li class="typeB"><a href="#"><img src="img/layout_b.png" alt=""></a></li>
+                <li class="typeA"><a href="#"><img src="../img/layout_a_ov.png" alt=""></a></li>
+                <li class="typeB"><a href="#"><img src="../img/layout_b.png" alt=""></a></li>
             </ul>
         </div>
         <!-- 맨위로가기버튼 -->
@@ -153,13 +165,13 @@
             $(function() {
                 $('body').vegas({
                     slides: [{
-                        src: 'img/bg6.jpg'
+                        src: '../img/bg6.jpg'
                     }, {
-                        src: 'img/bg1.jpg'
+                        src: '../img/bg1.jpg'
                     }, {
-                        src: 'img/bg7.jpg'
+                        src: '../img/bg7.jpg'
                     }, {
-                        src: 'img/bg3.jpg'
+                        src: '../img/bg3.jpg'
                     }],
                     // delay:7500
                     // 트랜지션 방식 http://vegas.jaysalvat.com/documentation/transitions/
