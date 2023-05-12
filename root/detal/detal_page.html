@@ -243,9 +243,11 @@ jQuery(document).ready(function() {
             return (item.id == getPage)
         })[0]
         ///console.log("detal_item: ", detal_item);
-        $("#other-warp").load("/detal_item/sub_ncsoft.html", function(item) {
-            $("#other-warp").append(item);
-        });
+        if (detal_item.link !== "") {
+            $("#other-warp").load("/detal_item/" + detal_item.link, function(item) {
+                $("#other-warp").append(item);
+            });
+        }
 
 
         var _head_template = '\
