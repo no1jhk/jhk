@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- header -->
+    @@include('../include/sub.head.html', {"title" : "JHK RWD ReNEW 2017"})
+    <!-- //header -->
+</head>
+
+<body>
+    <div class="wrap">
+
+      @@include('../include/left.nav.html', {})
+      <!-- 컨텐츠영역  -->
+      <div id="contents-wrap">
+        <div class="btn_exit"><a href="/index.html"><img src="../img/close.png" alt="목록으로"></a></div>
+
+        <div id="detale-area" class="sub_project"> 
+          <!-- 상단 프로젝트 기본 정보 -->
+          <div class="sub_title">
+            <div class="sub_top">
+              <!-- 왼쪽 : 프로젝트 타이틀 -->
+              <detal-head></detal-head>
+            </div>
+            <!-- 하단 프로젝트 상세내용 -->
+            <div class="project_contents">
+              <!-- 정보표 -->
+             
+              <table class="project_info">
+                <colgroup>
+                  <col style="width:120px">
+                  <col style="width:auto">
+                </colgroup>
+                <detal-info></detal-info>
+              </table>
+              <!-- 프로젝트 상세설명 -->
+              <detal-default></detal-default>
+
+            </div>
+          </div>
+          <!-- //상단 프로젝트 기본 정보 -->
+
+          <div id="other-warp" class="other_items">
+          </div>
+
+
+        </div>
+
+      </div>
+
+      @@include('../include/sub.foot.html', {})
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> -->
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+    <script type="text/javascript" src="/js/maindata.js"></script>
+    <script>
+    $(function(){
+      var detal_item = mainData.filter(function(item){ return (item.id == getPage) })[0]
+      ///console.log("detal_item: ", detal_item);
+      $("#other-warp").load( "/detal_item/sub_ncsoft.html",  function(item){        
+        $("#other-warp").append(item);
+      });
+
+
+      var _head_template = '\
+        <div class="project_title">  \
+          <div class="red_line"></div>  \
+          <h2>{{detaleList.title}}</h2>  \
+          <h3>{{detaleList.title_k}}</h3>  \
+        </div>  \
+      \ ';
+
+      var _info_template = '\
+        <table class="project_info">  \
+          <colgroup>  \
+            <col style="width:120px">  \
+            <col style="width:auto">  \
+          </colgroup>  \
+          <tbody> \
+            <tr v-for="item in detaleList.info" :key="detaleList.id + item[1]"> \
+              <th>{{item[0]}}</th> \
+              <td v-if="(item[0] == linkid)"><a :href="item[1]" alt=""> {{item[1]}} </a></td> \
+              <td v-else > {{item[1]}} </td> \
+            </tr> \
+          </tbody> \
+        </table>  \
+      \ ';
+      
+      var _desc_template = '\
+        <div class="default_detal">  \
+          <p class="project_txt">  \
+            {{detaleList.desc_text}} \
+          </p>  \
+          <div class="project_image">  \
+            <div v-if="detaleList.desc_device !== none_img" class="project_device"><img :src="detaleList.desc_device" alt=""></div>  \
+            <div v-if="detaleList.desc_image  !== none_img" class="project_thumbnail"><img :src="detaleList.desc_image" alt=""></div>  \
+          </div>  \
+        </div>  \
+      \ ';
+
+      var app = new Vue({
+        el: '#detale-area',
+        data: {
+          msg: 'vue detale!'
+        },
+        mounted: function() { console.log( "mounted >> ") }, 
+
+        /* ============= 컴포넌트 ============= */
+        components: {
+          'detal-head':{
+            data : function() {
+              return { detaleList: detal_item, }
+            },
+            template: _head_template, 
+          },
+          'detal-info':{
+            data : function() {
+              return { detaleList: detal_item, linkid: "URL"}
+            },
+            template: _info_template, 
+          },
+          'detal-default':{
+            data : function() {
+              return { detaleList: detal_item, none_img:"" }
+            },
+            template: _desc_template, 
+          }
+        },
+      })
+
+    })
+    </script>
+</body>
+
+</html>
