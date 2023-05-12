@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "ProjectName",
+      "path": "root/"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+  }
+}
+

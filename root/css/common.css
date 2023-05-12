@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓  reset  〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+ul, ol, li{list-style:none}img{border:none}
+body{font-family:"NanumBarunGothic", "나눔바른고딕", "NanumGothic", "나눔고딕", dotum, sans-serif;font-family:'Lato', sans-serif;color:#99999a;background-color:#202020}
+@font-face{font-family:'NanumBarunGothic';font-style:normal;src:url(../font/NanumBarunGothic.eot);src:local('NanumBarunGothic'),local('NanumBarunGothic'),url(../font/NanumBarunGothic.eot?#iefix) format('embedded-opentype'),url(../font/NanumBarunGothic.woff2) format('woff2'),url(../font/NanumBarunGothic.woff) format('woff'),url(../font/NanumBarunGothic.ttf) format('truetype')}
+/* reset */
+/*body {background: #1c1c1c;hei ght:100vh}*/
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓  wrap  〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+*{margin:0;padding:0;/*box-sizing:border-box;*/ }
+.wrap{overflow:hidden;width:100%;position:relative}
+/* 01 메뉴 */
+.nav{position:fixed;left:39px;right:0}
+/* 02 로고 타이틀 */
+.title{overflow:hidden;position:fixed;top:43%}
+.logo{ float:left;border-left:8px solid #bd2423;padding-left:17px}
+.name{width:190px;height:37px}
+.name>a.sp_m {}
+.intro{margin-top:15px}
+p.intro_txt{font:normal "RixSGo B";font-weight:bolder;letter-spacing:0.02px;line-height:14px;color:#666668}
+/* 03 푸터 */
+.footer{overflow:hidden;width:200px;position:fixed;left:40px;bottom:20px} 
+p.foot_txt{text-transform:uppercase; font-size:11px;line-height:12px;font:normal "NanumGothic";color:#59595a;font-weight:bold;letter-spacing:0.12px;border-bottom:1px solid #383838; padding-bottom:14px;padding-left:4px}
+/*  === 공통 layout_btn === */
+.layout_btn{position:relative}
+.l_btn{position:fixed; top:45%;right:13px}
+.typeA{} .typeA a{}
+.typeB{margin-top:5px}
+.typeB a{}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓  여기부터  left. 반응형 공통영역  〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+@media all and (min-width:801px){
+.nav{overflow:hidden;width:100%;padding-bottom:100%;position:fixed;/*left:39px;top:35px*/}
+.toggle{visibility:hidden}
+.menu-container{z-in dex:30;}
+ul.menu{overflow:hidden;width:100%;position:fixed;left:39px;top:35px}
+ul.menu li{margin-bottom:6px}
+ul.menu li>a{display:inline-block;font-weight:bold;text-decoration:none;color:#99999a;padding-right:22px}
+ul.menu li>a:hover{text-decoration:none;color:#c01717;background:url(../img/ov_bar.png) no-repeat 96% 46%}
+ul.menu li>a.on{text-decoration:none;color:#c01717;background:url(../img/ov_bar.png) no-repeat 96% 46%}
+}
+/* -------------------------------- ↑ 맨위로 가기 버튼 Modules - reusable parts of our design-------------------------------- */
+.cd{position:relative} 
+.cd-top{display:inline-block;
+width:44px;height:44px;position:fixed;right:10px;bottom:20px;
+box-shadow:0 0 10px rgba(0, 0, 0, 0.05);/* image replacement properties */
+overflow: hidden;text-indent:100%;white-space:nowrap;background:rgba(16, 16, 16, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;v/*background:rgba(226, 47, 31, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;v*/isibility:hidden;opacity:0;-webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s;transition: opacity .3s 0s,visibility 0s .3s;}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {-webkit-transition: opacity .3s 0s, visibility 0s 0s;-moz-transition: opacity .3s 0s,visibility 0s 0s;transition: opacity .3s 0s, visibility 0s 0s}
+.cd-top.cd-is-visible {visibility:visible;opacity:1}
+.cd-top.cd-fade-out {opacity:.5}
+.no-touch .cd-top:hover {background-color:#e86256;opacity:1}
+
+/* Required */
+.hidden{opacity:0}
+/**/.visible{opacity:1}
+
+/*반응형 */
+@media all and (max-width:800px){
+.nav{position:fixed;top:0;left:0;width:100%;height:60px;background-color:#242424;z-index:30}
+.toggle{visibility:visible}
+/*토글 삼자*/
+.toggle {z-index:1;position:absolute;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items: center;-ms-flex-align: center;align-items:center;top:0;left:18px;bottom: 0;margin: auto;cursor:pointer}
+.toggle span {position:relative;-webkit-align-self: center;-ms-flex-item-align: center;align-self: center;font-size:0;width:26px;height:2px;background-color:#ededed;border-radius: 100px;-webkit-transition: background-color 0.2s ease-out;transition: background-color 0.2s ease-out}
+.toggle span:before, .toggle span:after {content: "";position: absolute;width:100%;height:100%;background-color:#ededed;
+ border-radius:100px;-webkit-transition: -webkit-transform .2s ease-out;transition: -webkit-transform .2s ease-out;transition: transform .2s ease-out;transition: transform .2s ease-out, -webkit-transform .2s ease-out
+}
+.toggle span:before{bottom: calc(100% + 6px)}
+.toggle span:after{top:calc(100% + 6px)}
+/* 토글 X */
+.is-visible .toggle span{background-color:transparent}
+.is-visible .toggle span:before{bottom:auto;-webkit-transform:rotate(45deg);transform: rotate(45deg)}
+.is-visible .toggle span:after{top:auto;-webkit-transform: rotate(-45deg);transform: rotate(-45deg)}
+.visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+
+.menu-container{position:relative;}
+/* 01 메뉴 */
+ul.menu{
+padding-top:100px;/*메뉴4개위에서부터떨어진값padding:16px;position:absolute;top:60px;border:1px dashed yellow;*/
+width:100%;min-height:100vh;
+/*min-height:calc(100vh - 60px);눌렀을때 높이값 background:rgba(40,40,40,.70);background:#000;  */
+color:#ededed;background:rgba(40,40,40,.90);
+/*bacground-color:#313131;*/}
+ul.menu li{text-align:center;font-size:22px;/*line-height:30px;*/line-height:44px;}
+ul.menu li>a{opacity:0;padding:10px 12px;position:relative;cursor:pointer;
+display:inline-block;font-weight:bold;text-decoration:none;color:#99999a;/*padding-right:22px;border:1px solid red;*/padding:0 20px}
+ul.menu li>a:hover{text-decoration:none;color:#c01717;background:url(../img/ov_bar.png) no-repeat 100% 46%;}
+ul.menu li>a.on{text-decoration:none;color:#c01717;background:url(../img/ov_bar.png) no-repeat 100% 46%;}
+ul.menu{opacity:0;-webkit-transition:background-color 0.25s ease-out, opacity 0.15s ease-out;transition: background-color 0.25s ease-out, opacity 0.15s ease-out}
+ul.menu.is-visible{opacity:1}
+ul.menu.is-visible li a{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}
+
+.title{display:none;}
+.footer{display:none;}
+/*  === 공통 layout_btn === */
+.layout_btn{display:none}
+.cd-top {width:60px;height:60px;position:fixed;right:10px;bottom:20px}
+}
+
+
+@media all and (max-width:480px) {
+.title{display:none;}
+.footer{display:none;}
+.cd-top {width:50px;height:50px;position:fixed;right:10px;bottom:20px}
+
+}
+
+
+

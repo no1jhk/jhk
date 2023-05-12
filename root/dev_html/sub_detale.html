@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- header -->
+    @@include('./include/sub.head.html', {"title" : "JHK RWD ReNEW 2017"})
+    <!-- //header -->
+</head>
+
+<body>
+    <div class="wrap">
+
+      @@include('./include/left.nav.html', {})
+      <!-- 컨텐츠영역  -->
+      <div id="contents-wrap">
+        <div class="btn_exit"><a href="index.php"><img src="img/close.png" alt="목록으로"></a></div>
+
+        <div id="detale-area" class="sub_project">
+          <!-- 상단 프로젝트 기본 정보 -->
+          <div class="sub_title">
+            <div class="sub_top">
+              <!-- 왼쪽 : 프로젝트 타이틀 -->
+              <div class="project_title">
+                <div class="red_line"></div>
+                <h2> 엔씨소프트 게임 이벤트 프로모션</h2>
+                <h3>(주)엔씨소프트 plaync에 등록된 게임 이벤트 프로모션 작업</h3>
+              </div>
+            </div>
+            <!-- 하단 프로젝트 상세내용 -->
+            <div class="project_contents">
+              <!-- 정보표 -->
+              <table class="project_info">
+                <col>
+                <tr>
+                  <th>작업내용</th>
+                  <td>LGU+ 3D프린터 웹사이트 구축</td>
+                </tr>
+                <tr>
+                  <th>작업기간</th>
+                  <td>2016.01 - 2016.02</td>
+                </tr>
+                <tr>
+                  <th>고객사</th>
+                  <td>LGU+ 기업클라우드사업팀 </td>
+                </tr>
+
+              </table>
+              <!-- 프로젝트 상세설명 -->
+              <p class="project_txt">
+                3D프린터로 제작된 상품들을 판매하는 쇼핑몰 형태의 웹사이트를 LGU+ 웹하드에서 진행하게 되었습니다.<br />
+                3D프린터를 처음 접하는 사용자들이 대부분이므로 단순 쇼핑몰 UI에 국한되지 않게, 고객 친화적인 UI 구성이 필요했습니다.
+                견적요청을 통한 제작의뢰 프로세스가 이해하기 쉽고 간결하게 표현해서 이용자가 어렵게 느끼지 않도록 하는데 중점을 두었습니다.
+                최신 트랜드를 반영하여 큰사이즈의 폰트사용과 넓찍한 여백의 구성으로 시안을 작업하였습니다.<br />
+              </p>
+              <br />
+              <!-- 작업한 회사로고 -->
+              <div class="company_logo show"><img src="img/c_logo_lgu.png" alt=""></div>
+              <!-- RWD 디바이스 별 구분 -->
+              <div class="project_device show"><img src="img/labtop_mockup.png" alt=""></div>
+              <!-- 상세이미지 나열 -->
+            </div>
+          </div>
+          <!-- //상단 프로젝트 기본 정보 -->
+
+          <div class="sub_other">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      @@include('./include/sub.foot.html', {})
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.10.4/polyfill.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> -->
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+    <script type="text/javascript" src="/js/maindata.js"></script>
+    <script>
+      var _head_template = '\ ';
+      var _list_template = '\ ';
+      var _list_template = '\ ';
+
+
+      var routes = [{
+          path: '/',
+          name: 'user',
+          component: _head_template
+        },
+      ];
+
+      var router = new VueRouter({ mode: 'hash' }); // history, hash
+      var app = new Vue({
+        el: '#detale-area',
+        data: {
+          msg: 'vue detale!'
+        },
+        router, 
+        mounted: function() { console.log( "route >> ", this.$route) }, 
+
+        /* ============= 컴포넌트 ============= */
+        components: {
+          'detale-head':{
+            data : function() {
+              return { detaleList: mainData, }
+            },
+            template: _head_template, 
+          },
+          'detale-info':{
+            data : function() {
+              return { detaleList: mainData, }
+            },
+            template: _list_template, 
+          },
+          'detale-desc':{
+            data : function() {
+              return { detaleList: mainData, }
+            },
+            template: _list_template, 
+          }
+        },
+      })
+    </script>
+</body>
+
+</html>

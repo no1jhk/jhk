@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- header -->
+  @@include('./include/sub.head.html', {"title" : "JHK RWD ReNEW 2017"})
+  <!-- //header -->
+</head>
+
+<body>
+  <div class="wrap">
+
+    @@include('./include/left.nav.html', {})
+
+    <!-- 컨텐츠영역  -->
+    <div id="contents-wrap">   
+        <!-- 닫기/ 나가기 버튼 -->
+        <div class="btn_exit"><a href="index.php"><img src="img/close.png" alt="나가기"></a></div>        
+        <div class="sub_project">           
+            <!-- 상단 프로젝트 제목 -->
+            <div class="sub_title">
+                <div class= "sub_top">
+                    <!-- 왼쪽 : 프로젝트 타이틀 -->
+                    <div class="project_title">
+                        <div class="red_line"></div>
+                        <h2><img src="img/sub_tit_hebe.png" alt="헤베의 옷장 쇼핑몰"></h2>                  
+                        <h3>헤베의 옷장 쇼핑몰 </h3>
+                    </div>
+                </div>
+                <!-- 하단 프로젝트 상세내용 -->
+                <div class="project_contents">                    
+                    <table class="project_info">
+                        <col>
+                        <tr>
+                            <th>작업내용</th>
+                            <td>헤베의 옷장 쇼핑몰 작업을 진행.</td>
+                        </tr>
+                        <tr>
+                            <th>작업기간</th>
+                            <td>2013.07~2013.08</td>
+                        </tr>
+                        <tr>
+                            <th>고객사</th>
+                            <td>아이디얼 팩토리</td>
+                        </tr>                        
+                    </table>
+                    <!-- 프로젝트 상세설명 -->
+                    <p class="project_txt">
+                        연예인 오승은씨를 내세운 쇼핑몰 헤베의 옷장 작업을 진행하였습니다.<br /> 고객사 아이디얼팩토리 측의 계약 불이행으로 오픈되지는 못하였습니다.         
+                    </p>
+                    <!-- 상세이미지 나열 -->
+                    <div class="detail_list">
+                        <p class="mockup_img"><!-- <img src="img/sub_cont_unity0.png" alt=""> --></p>
+                        <ul class="detail_img">
+                            <li class="show"><img src="img/sub_cont_hebe0.png" width="920" alt=""></li> 
+                            <li class="show"><p class="project_txt">헤베의 옷장 쇼핑몰 작업 메인, 서브입니다.</p><br /></li>                        
+                            <li class="show"><img src="img/sub_cont_hebe1.jpg" width="920" alt=""></li>                           
+                            <li class="show"><img src="img/sub_cont_hebe2.jpg" width="920" alt=""></li>                           
+                            <li class="show"><img src="img/sub_cont_hebe3.jpg" width="920" alt=""></li>                           
+                            <li class="show"><img src="img/sub_cont_hebe4.jpg" width="920" alt=""></li>
+                            <li class="show"><img src="img/sub_cont_hebe5.jpg" width="920" alt=""></li>                           
+                            <li class="show"><img src="img/sub_cont_hebe6.jpg" width="920" alt=""></li>               
+                        </ul>
+                    </div>
+                </div>    
+            </div> 
+            <!-- //하단 커리어 리스트 -->
+        </div>
+    </div>
+
+    @@include('./include/sub.foot.html', {})
+  </div>
+</body>
+
+</html>

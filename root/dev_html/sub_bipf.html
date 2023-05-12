@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- header -->
+  @@include('./include/sub.head.html', {"title" : "JHK RWD ReNEW 2017"})
+  <!-- //header -->
+</head>
+
+<body>
+  <div class="wrap">
+
+    @@include('./include/left.nav.html', {})
+
+    <!-- 컨텐츠영역  -->
+    <div id="contents-wrap">   
+        <!-- 닫기/ 나가기 버튼 -->
+        <div class="btn_exit"><a href="index.php"><img src="img/close.png" alt="나가기"></a></div>
+        <!-- === 프로젝트영역 === -->
+        <div class="sub_project">           
+            <!-- 상단 프로젝트 제목 -->
+            <div class="sub_title">
+                <div class= "sub_top">
+                    <!-- 왼쪽 : 프로젝트 타이틀 -->
+                    <div class="project_title">
+                        <div class="red_line"></div>
+                        <h2><img src="img/sub_tit_bipf.png" alt="BIPF 부천산업진흥재단"></h2>                  
+                        <h3>BIPF 부천산업진흥재단 구축 프로젝트</h3>
+                    </div>
+                </div>
+                <!-- 하단 프로젝트 상세내용 -->
+                <div class="project_contents">                    
+                    <!-- 정보표 -->
+                    <table class="project_info">
+                        <col>
+                        <tr>
+                            <th>작업내용</th>
+                            <td>BIPF 부천산업진흥재단 구축 프로젝트</td>
+                        </tr>
+                        <tr>
+                            <th>작업기간</th>
+                            <td>2012.08.31~2012.10.09</td>
+                        </tr>
+                        <tr>
+                            <th>고객사</th>
+                            <td>BIPF 부천산업진흥재단</td>
+                        </tr>
+                        <tr>
+                            <th>URL</th>
+                            <td><a href="http://www.bipf.or.kr/design/index.asp" target="_blank">http://www.bipf.or.kr/design/index.asp</a></td>
+                        </tr>              
+                    </table>
+                    <!-- 프로젝트 상세설명 -->
+                    <p class="project_txt">BIPF 부천산업진흥재단 디자인 시안을 작업했습니다. 중소기업을 지원하는 재단으로 재단의 소개 및 사업, 제품에 대한 설명을 비주얼영역에서 강렬한 이미지로 보여주고 재단관련 정보를 차례대로 읽어나갈수 있게 구성하였습니다. 시안은 전체적으로 밝은 느낌을 내게 작업하였습니다.
+                    두명의 디자이너가 시안을 작업하였고, 선택된 시안에 맞춰 가이드를 잡고 분할해 서브페이지 작업을 하였습니다.
+                    </p>                    
+                    <br />
+                    <!-- 상세이미지 나열 -->
+                    <div class="detail_list">
+                        <!--<p class="mockup_img"> <img src="img/sub_cont_unity0.png" alt=""> </p>-->
+                        <ul class="detail_img">
+                            <li class="show"><img src="img/sub_cont_bipf0.jpg" width="920" alt=""></li>
+                            <li class="show"><img src="img/sub_cont_bipf1.jpg" width="920" alt=""></li>                      
+                        </ul>
+                    </div>
+                </div>    
+            </div> 
+            <!-- //하단 커리어 리스트 -->
+        </div>
+    </div>
+
+    @@include('./include/sub.foot.html', {})
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<?php
+    $workname = null;
+    if( isset($_GET['work']) && ($workname=trim($_GET['work']))!="" ){
+    }
+    if( !$workname ) $workname = "lguplus";
+?>
+<?php include_once("./inc/sub.head.php");?>
+<?php include_once("./inc/left.nav.php");?>
+<!-- 컨텐츠영역  -->
+<div id="contents-wrap">   
+    <div class="btn_exit"><a href="index.php"><img src="./img/close.png" alt="목록으로"></a></div>        
+    <div class="sub_project">
+    	<?php include "./works/{$workname}.php"; ?>
+    </div>
+
+<!-- 하단부 -->
+<?php include_once("./inc/sub.foot.php");?>

@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <!-- header -->
+  @@include('./include/sub.head.html', {"title" : "JHK RWD ReNEW 2017"})
+  <!-- //header -->
+</head>
+
+<body>
+  <div class="wrap">
+
+    @@include('./include/left.nav.html', {})
+
+    <!-- 컨텐츠영역  -->
+    <div id="contents-wrap">   
+        <div class="btn_exit"><a href="index.php"><img src="img/close.png" alt="목록으로"></a></div>
+        <div class="sub_project">           
+            <!-- 상단 프로젝트 제목 -->
+            <div class="sub_title">
+                <div class= "sub_top">
+                    <!-- 왼쪽 : 프로젝트 타이틀 -->
+                    <div class="project_title">
+                        <div class="red_line"></div>
+                        <h2><img src="img/sub_tit_hira.png" alt="건강보험심사평가원"></h2>                  
+                        <h3>건강보험심사평가원</h3>
+                    </div>
+                </div>
+                <!-- 하단 프로젝트 상세내용 -->
+                <div class="project_contents">                    
+                    <!-- 정보표 -->
+                    <table class="project_info">
+                        <col>
+                        <tr>
+                            <th>작업내용</th>
+                            <td>건강보험심사평가원</td>
+                        </tr>
+                        <tr>
+                            <th>작업기간</th>
+                            <td>2013.07~2013.08</td>
+                        </tr>
+                        <tr>
+                            <th>고객사</th>
+                            <td>건강보험심사평가원</td>
+                        </tr>                        
+                    </table>
+                    <!-- 프로젝트 상세설명 -->
+                    <p class="project_txt">건강보험심사평가원 디자인 시안 draft 입니다. 초안에서 상단영역을 변경하고 전체적인 느낌을 바꾸는 방향으로 작업되었습니다.</p> 
+                    <br />                   
+             
+                    <!-- 상세이미지 나열 -->
+                    <div class="detail_list">
+                        <ul class="detail_img">
+                            <li class="show"><img src="img/sub_cont_hira0.jpg" width="920" alt=""></li>
+                            <li class="show"><img src="img/sub_cont_hira1.jpg" width="920" alt=""></li>
+                            <li class="show"><img src="img/sub_cont_hira2.jpg" width="920" alt=""></li>                        
+                        </ul>
+                    </div>
+                </div>    
+            </div> 
+            <!-- //하단 커리어 리스트 -->
+        </div>
+    </div>
+
+    @@include('./include/sub.foot.html', {})
+  </div>
+</body>
+
+</html>

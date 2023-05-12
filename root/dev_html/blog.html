@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- header -->
+    @@include('./include/main.head.html', {"title" : "JHK RWD ReNEW 2017"})
+    <!-- //header -->
+</head>
+
+<body>
+    <div class="wrap">
+
+			@@include('./include/left.nav.html', {})
+
+			<!-- 컨텐츠영역  -->
+			<div id="blog_contents-wrap">   
+				<div class="blog">
+					<div class="linear"><img src="./img/linear.png" alt=""></div>
+					<!-- 003 하단 커리어 리스트 -->
+					<div class="blog_title">
+							<div class="b_top">
+									<h3><img src="./img/h3_blog.png" alt="BLOG"></h3>
+									<p class="uiux"><img src="./img/blog_planning.png" alt="WEB UI/UX PLANNING"></p>
+							</div>
+							<div class="b_contents"> 
+									<h3 class="b_plan">하나들셋 </h3>                    
+									<ul class="blog_list">
+										<li><a href="">화면기획서<!-- <img src="./img/portfolio_ux.jpg" alt="화면기획서" -->></a></li>
+										<li>모노라움 퍼블리싱 기술서</li>
+										<li>네이버 개인블로그</li>
+										<li>티스토리 개인블로그</li>
+									</ul>
+									<p class="download"><a href="#" >#스토리보드 다운로드</a> </p>
+							</div>    
+					</div> 
+							<!-- //하단 커리어 리스트 -->
+				</div>
+			</div>
+			<script>
+			//메뉴선택된 상태
+			$("ul.menu li").eq(2).find("a").addClass("on");
+			</script>
+
+        @@include('./include/main.foot.html', {})
+    </div>
+</body>
+
+</html>
