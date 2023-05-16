@@ -18,8 +18,8 @@ var mainData = [
     ],
     desc_text : "2017년 5월 운영부문의 가장 큰 고객사인 엔씨소프트의 프로젝트에 참여하게 되어 2019년 현재까지 70여건의 게임프로모션 세트를 제작하였습니다. 엔씨소프트의 온라인 게임 프로모션을 제작하여 사용자의 관심과 호기심을 유발하고 게임 활성화에 이바지합니다.",
     desc_device : "",
-    desc_image : "../img//sub_cont_nc2022.jpg"
-    desc_image : "../img//sub_cont_nc2022.jpg"
+    desc_image : "../img//sub_cont_nc_2022.jpg"
+   
   },
   {
     id        : "60",
