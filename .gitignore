@@ -1,0 +1,7 @@
+*.bak
+.git/
+.svn/
+node_modules/
+gulpfile_ORG.js
+WORKsource/
+**/webpack5_Publishing/dist/

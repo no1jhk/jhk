@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* === 커리어영역 === */
+#contents-wrap{position:relative;margin-left:343px;padding-top:186px;padding-bottom:50px; background-color:#252525}
+.btn_exit{position:absolute;left:960px;/*right:16%*/;top:28px;z-index:20;}
+/*=== 프로젝트영역 ===*/
+.sub_project{overflow:hidden;width:921px;margin-left:90px}
+/*img{max-width:100%;height:auto;}*/
+/* <상단 프로젝트 제목> */
+.sub_title{overflow:hidden;width:100%; font-size:14px;color:#515151}
+.sub_top{overflow:hidden;/*border:1px dashed yellow;*//*padding-bottom:43px;*/}
+.project_title{overflow:hidden;float:left}
+.project_title .red_line{width:41px;height:2px;background-color:#e11212;margin-bottom:16px}
+.project_title>h2{font-family:'Helvetica','NanumBareunGothic',sans-serif;
+  font-size:38px;font-weight:600;color:#fff
+}
+.project_title>h3{ margin-top: 10px;
+  font-family:'NanumGothic',dotum,sans-serif;font-size:14px;color:#898888}
+/*ul.project_btn{height:99px;float:right;}
+ul.project_btn li:first-child{margin-top:2px}
+ul.project_btn li:last-child img{vertical-align:top;}*/
+/* <하단 프로젝트 상세내용> */
+.project_contents{position:relative;overflow:hidden;width:100%;border-top:1px solid #a7a7a7;font-family:'NanumGothic', dotum, sans-serif;font-size:13px;color:#898888;margin-top:31px}	
+/* 정보표 */
+.project_info{margin-top:17px}
+.project_info th{width:120px;text-align:left;font-weight:bold;color:#c5c5c5;}
+.project_info td{color:#989898}
+a:link,a:visited,a:hover,a:active{color:#7486c0;text-decoration:none}
+/*프로젝트 상세설명*/
+.project_txt{margin-top:55px;line-height:20px}
+.project_txt10{margin-top:10px;line-height:20px}
+.stit{font-size:16px; font-weight:bold; color:#e2e2e2;}
+/*작업한 회사로고*/
+.company_logo{position:absolute;left:400px;top:479px; z-index:1;}
+/*RWD 디바이스 별 구분*/
+.project_device{padding:112px 0 110px 0;width:617px;margin:0 auto}
+/* 기본 이미지 */
+.default_detal .project_image{ margin-top: 50px; }
+.default_detal .project_thumbnail img{  width: 100%; max-width: 920px; }
+.default_detal .project_thumbnail img+img{  margin-top: 20px; }
+
+
+/*=== 상세이미지   ===*/
+.other_items {
+  font-family: 'NanumGothic', dotum, sans-serif;
+  font-size: 13px; color: #898888;
+}
+.project_device_cloudn{/*border:1px solid lightblue;  padding:86px 0 110px 355px; */width:617px;margin:0 auto}
+.project_device_unity{padding:86px 0 110px 0px;width:700px;margin:0 auto;bo rder:1px solid red;}
+.detail_list{overflow:hidden;padding-bottom:150px;bo rder:1px solid red;}
+
+/*상세이미지*/
+.detail{padding-bottom:150px}
+ul.detail_img li{margin-top:10px;margin-bottom:20px}
+.ml60{margin-left:60px}
+
+
+/* cloud N */
+ul.detail_cloudn_img{/*border:1px dashed indianred;*/overflow:hidden;}
+p.mockup_img{text-align:center;margin:20px auto 50px auto;/*border:1px solid lightblue;*/}
+ul.detail_cloudn_img li{ /*display:inline-block;*/float:left;margin-right:17px;margin-bottom:20px}
+ul.detail_cloudn_img li:nth-child(3n){margin-right:0px;}/*3의배수-1*/
+ul.detail_cloudn_img li img{max-width:100%;height:auto;}
+
+/* 3단배열 아이폰 목업 2016.09.02  */
+ul.detail_third_img li{width:100%; text-align:center; /*border:1px solid yellow;float:left;*/display:inline-block; margin-top:80px;/*margin-right:24px;*/margin-bottom:20px}
+ul.detail_third_img li:nth-child(3n){margin-right:0px}/*3의배수-1*/
+/* 1단 배열 2016.09.02 */
+ul.detail_first_img li:first-child{margin-top:130px}
+ul.detail_first_img li{float:left;margin-right:24px;margin-bottom:20px}
+
+/* 유니티- UNITY 3DKOREA */
+ul.detail_unity_img {overflow:hidden; }
+ul.detail_unity_img li{border:1px solid yellow;float:left;margin-right:24px;margin-bottom:20px}
+
+
+/* 경기도청 */
+.company_logo_gy{position:absolute;left:370px;top:446px; z-index:1;}
+.company_logo_snu{position:absolute;left:420px;top:436px; z-index:1;}
+.company_logo_snu{position:absolute;left:420px;top:436px; z-index:1;}
+/* 웹하드App */
+.sub_con_tit_logo{margin-bottom:32px;}
+ul.detail_wapp_img{width:920px;padding-bottom:150px;text-align:center; bo rder:1px solid yellow;overflow: hidden;}
+ul.detail_wapp_img li{/*width:100%;*/float:left;margin-right:20px;margin-bottom:20px;/*border:1px solid red;*/}
+ul.detail_wapp_img li:nth-child(2n){margin-right:0px}
+ 
+
+
+/*반응형 20160821 */
+@media all and (max-width:1024px){
+img{max-width:100%;height:auto;}
+#contents-wrap{margin-left:0px;padding:160px 20px 0px 20px;}
+.btn_exit{position:absolute;left:90%;/*right:16%;*/top:28px;}
+.btn_exit>a>img{width:100%;}
+/*=== 프로젝트영역 ===*/
+.sub_project{width:100%;margin-left:0px;padding:0 0 0 0;}
+.sub_title{}
+
+/*작업한 회사로고*/
+.company_logo{position:absolute;left:44%;top:499px; z-index:1;}
+.project_device{text-align:center; /*padding:112px 0 110px 0;*/width:100%;margin:10px auto}
+
+/*=== 상세이미지   ===*/
+.project_device_cloudn{border:1px solid red;/* padding:86px auto 110px auto;*/width:100%;margin:0 auto}
+.project_device_unity{padding:86px 0 110px 0px;width:700px;margin:0 auto;bo rder:1px solid red;}
+.detail_list{overflow:hidden;padding-bottom:150px;bo rder:1px solid red;}
+
+/* cloud N */
+ul.detail_cloudn_img{overflow:hidden;}
+p.mockup_img{margin:0px auto 60px auto}
+ul.detail_cloudn_img li{position:relative; height:100%; width:30%;margin-right:17px; float:left; margin-bottom:20px}
+ul.detail_cloudn_img li:nth-child(3n){margin-right:0px}/*3의배수-1*/
+
+/* 웹하드App */
+.sub_con_tit_logo{}
+ul.detail_wapp_img{width:100%;padding-bottom:150px; overflow: hidden;}
+ul.detail_wapp_img li{position:relative; height:100%; width:48%;float:left;margin-right:20px;margin-bottom:20px;bord er:1px solid red;}
+ul.detail_wapp_img li:nth-child(2n){margin-right:0px}
+
+.layout_btn{display:none}
+}
+
+
+
+/* 태블릿 */
+@media all and (max-width:800px){
+#contents-wrap{padding:120px 20px 0px 20px;margin:0 auto;/*border:1px dashed green;*/}
+.btn_exit{display:none}
+/*.btn_exit>a>img{float:right;width:50%;opacity:3.3;}*/
+.sub_project{/*text-align:center;border:1px dashed pink*/}
+.project_title{float:none;width:100%;}
+/* <하단 프로젝트 상세내용> */
+.project_contents{position:relative;overflow:hidden;border-top:1px solid #a7a7a7;margin-top:31px}	
+
+/*작업한 회사로고*/
+.company_logo{}
+.project_device{text-align:center; /*padding:112px 0 110px 0;*/width:100%;margin:0 auto}
+
+/*=== 상세이미지   ===*/
+.project_device_cloudn{/*border:1px dashed red;*/padding:86px auto 110px auto;width:100%;margin:0 auto}
+.project_device_unity{padding:86px 0 110px 0px;width:700px;margin:0 auto}
+.detail_list{overflow:hidden;padding-bottom:150px}
+
+/* cloud N */
+ul.detail_cloudn_img{/*border:1px dashed indianred;*/overflow:hidden;margin-bottom:50px;}
+p.mockup_img{margin:30px 0}
+ul.detail_cloudn_img li{/*border:1px dashed yellow; */margin-right:17px;margin-bottom:20px}
+ul.detail_cloudn_img li>img{max-width:100%}
+ul.detail_cloudn_img li:nth-child(3n){margin-right:0px}
+/* 웹하드App */
+.sub_con_tit_logo{}
+ul.detail_wapp_img{width:100%;padding-bottom:90px}
+ul.detail_wapp_img li{position:relative; height:100%;wid th:100%;float:left;margin-right:8px;margin-bottom:20px;bord er:1px solid red;}
+ul.detail_wapp_img li:nth-child(2n){margin-right:0px}
+}
+
+/*  모바일 */
+@media all and (max-width:480px){
+.btn_exit{}
+.sub_project{}
+/* <상단 프로젝트 제목> */
+.sub_title{overflow:hidden;width:100%;}
+.sub_top{overflow:hidden;/*border:1px dashed yellow;padding-bottom:43px;*/}
+.project_title{}
+.project_title .red_line{width:41px;height:2px;background-color:#e11212;margin-bottom:16px}
+.project_title>h2{display:inline-block;max-width:100%;/*font-size:170%;*/font-weight:bold}
+.project_title>h3{font-size:14px;}
+/* <하단 프로젝트 상세내용> */
+.project_contents{}	
+
+/*작업한 회사로고*/
+.company_logo{}
+.project_device{/*text-align:center; padding:112px 0 110px 0;*/width:100%;margin:0 auto}
+
+/*=== 상세이미지   ===*/
+.project_device_cloudn{/*border:1px solid red; */padding:86px auto 80px auto;width:100%;margin:0 auto}
+.project_device_unity{padding:86px 0 110px 0px;width:700px;margin:0 auto;}
+.detail_list{overflow:hidden;padding-bottom:150px;bo rder:1px solid red;}
+
+/* cloud N */
+ul.detail_cloudn_img{/*border:1px dashed indianred;border:1px dashed yellow;*/}
+p.mockup_img{margin:0}
+ul.detail_cloudn_img li{marg in-right:10px;margin-bottom:0px}
+ul.detail_cloudn_img li>img{max-width:100%}
+
+
+/*상세이미지*/
+.detail{padding-bottom:150px}
+.detail_img li{margin-bottom:10px}
+}

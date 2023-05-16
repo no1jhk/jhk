@@ -1,0 +1,422 @@
+@charset "utf-8";
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓   01 WORK :contents-wrap  〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+#contents-wrap{margin-left:343px;margin-top:26px;/*mar gin-right:20px;border:1px dashed red;*/}
+/*  boxArea */
+ul#boxlist{zoom:1}
+ul#boxlist::after{display:block;clear:both;content:""}
+/* Masonry 적용하는 클래스  */
+.item{cursor:pointer;background-color:#303030}
+.item:hover{background-color:#171717}
+.item .main_item-link { display: block; text-decoration: none; }
+li.p_box01{position:relative;overflow:hidden;background-color:#303030}
+.box_title{width:220px;height:170px;margin:28px 0 0 26px}
+p.b_tit{font-size:20px;font-weight:bold;color:#858585;line-height:20px}
+p.b_txt{font-size:14px;color:#5d5d5d;margin-top:6px}     
+p.p_logo{position:relative;text-align:center}
+p.p_logo span{display:block;text-align:center;width:100%;position:absolute;top:0;left:0}
+p.p_logo span img{vertical-align:top}
+.p_img{position:absolute;right:0;bottom:0px}
+.p_img img{vertical-align:top}
+* [class*="p_box"]{overflow:hidden;float:left;width:287px;height:470px;margin-right:17px;margin-bottom:16px}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 02 ABOUT :커리어영역 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+.sp_c {overflow:hidden;display:inline-block;width:auto;height:10px;background:url('../img/sp_c.png') no-repeat 0 0;line-height:999px;vertical-align:top}
+.sp_m {overflow:hidden;display:inline-block;width:auto;height:10px;background:url('../img/sp_m.png') no-repeat 0 0;line-height:999px;vertical-align:top}
+.sp_sub {overflow:hidden;display:inline-block;width:auto;height:10px;background:url('../img/sp_sub.png') no-repeat 0 0;line-height:999px;vertical-align:top}
+#about_contents-wrap{margin-left:385px;padding-bottom:70px}
+.about{position:relative;width:921px;margin-left:34px}
+/*개인정보*/
+.private_info{width:370px;float:left;font-size:14px;margin-top:26px}
+.private_info h3{margin-top:19px;margin-bottom:24px;color:#fff;font-size:45px;font-family:helveticaNeue}
+.private_info p{/*color:#515151;*/color:#5d5d5e;line-height:18.5px}
+/*상단4개*/
+.prv{border-top:2px solid #d5d5d5}
+.age{float:left;width:140px}
+.t_age{width:79px;height:34px;background:url(../img/sp_sub.png);background-position:0 0}
+.birth{font-size:22px}
+.have{float:left;width:155px;margin-left:75px}
+.t_have{width:95px;height:32px;background:url(../img/sp_sub.png);background-position:-81px 0}
+.like{float:left;width:140px;margin-top:38px}
+.t_like{width:72px;height:32px;background:url(../img/sp_sub.png);background-position:0 -34px}
+.hate{float:left;width:155px;margin:38px 0 0 75px}	
+.t_hate{width:94px;height:32px;background:url(../img/sp_sub.png);background-position:-74px -34px}
+/*우측 이미지*/
+.iam_all{position:absolute;top:-14px;right:2px;z-index:3px}
+.iam_img{float:right;width:449px;height:579px}	
+/*커리어*/
+.career{overflow:hidden;width:100%;border-top:2px solid #d5d5d5;box-sizing:border-box;padding-top:24px;font-size:14px;/*color:#515151;*/ color:#5d5d5e;background-image:url('../images/iam_img_bottom.png') 50%,50%}
+.point_line{position:absolute;top:451px;left:2px;width:181px;height:181px;background:url(../img/point_line.png);}
+.c_tit{float:left;width:150px;height:34px;background:url(../img/sp_sub.png);background-position:0 -68px}
+.uiux{float:left;margin-left:35px;width:211px;height:33px;background:url(../img/sp_sub.png);background-position:0 -139px}
+.blit_tit{margin-top:2px;float:left;height:40px;line-height:44px;margin-right:5px;width:18px;height:18px;background-position:-91px -264px}
+/* 경력사항 회사 리스트 */
+.car_00{margin-top:90px}
+.c00_logo{width:53px;height:35px;/*font-weight:bold;font-size:20px;color:#6f6f6f;*/background:url(../img/sp_sub.png);background-position:-159px -280px}
+.car_01{margin-top:110px}
+.c01_logo{width:89px;height:24px;background:url(../img/sp_sub.png);background-position:0 -264px}
+.career_list{margin-top:28px;line-height:19px}
+.c_date{font-weight:bold;margin-bottom:8px;font-size:16px;color:#6d6d6d}
+.car_02{margin-top:90px}
+.c02_logo{width:180px;height:37px;background:url(../img/sp_sub.png);background-position:0 -174px}
+.car_03{margin-top:90px}
+.c03_logo{width:203px;height:20px;background:url(../img/sp_sub.png);background-position:0 -212px}
+.car_04{margin-top:90px}
+.c04_logo{width:154px;height:29px;background:url(../img/sp_sub.png);background-position:0 -234px}
+.c05_logo{width:143px;height:27px;background:url(../img/sp_sub.png);background-position:0 -288px}/*미디어포스원*/
+
+
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 03 BLOG :기획서 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+#blog_contents-wrap{position:relative;margin-left:385px;margin-top:26px;border:1px dashed #ccc}
+.blog{overflow:hidden;width:921px;margin-left:34px;border:1px dashed yellow}
+.linear{position:absolute;left:35px;top:-134px;z-index:1} 
+/*커리어*/
+.blog_title{overflow:hidden;width:100%;border-top:2px solid #d5d5d5;box-sizing:border-box;padding-top:24px;font-size:14px;color:#515151}
+.blog_title>h3{}
+.b_top{overflow:hidden}		
+.b_top>h3{float:left} 
+.b_top>p.uiux{float:left;margin-left:35px}	
+.b_contents{margin-top:35px;border:1px dashed indianred}	
+h3.b_plan{line-height:19px;font-weight:bold;margin-bottom:8px;font-size:16px;color:#989898;/*color:#565656;*/}
+p.download > a:link{color:#989898}
+p.download > a:hover{color:#989898}
+ul.blog_list{margin-top:28px}
+ul.blog_list li{display:inline-block;/*float:left;*/width:340px;height:auto; mar gin-right:26px}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 04 CONTACT :Contact Area 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+#contact_contents-wrap{margin-left:343px}
+.contact{float:left;overflow:hidden;width:921px;height:100%;padding-bottom:160px}
+.number{margin:0 auto;margin-top:119px;width:579px;height:691px}
+p.email{margin-top:14px;text-align:center}
+a.email_link:link{text-decoration:none;color:#797979;font-size:18px}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ▒▒▒▒▒▒   반응형 20161220       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  */
+@media all and (min-width:980px){
+#contents-wrap{margin-left:343px;/*border:1px solid indianred;*/}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 02 ABOUT :커리어영역   〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 04 CONTACT :Contact Area 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+}
+
+@media all and (max-width:800px){
+#contents-wrap{margin:40px 0 0 20px;padding:40px 30px;/*border:1px dashed red;*/}
+* [class*="p_box"]{float:left;width:334px;margin-right:17px;margin-bottom:16px}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 02 ABOUT :커리어영역   〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+#about_contents-wrap{margin:60px 0px;padding-bottom:70px;/*bo rder:1px dashed yellow;*/}
+.about{position:relative;/*width:921px;border:1px dashed yellow;*/max-width:90%;}
+/*개인정보*/
+.private_info{/*width:370px;float:left;*/width:100%;float:none;display:inline-block;font-size:18px;margin-top:26px}
+.private_info h3{margin-top:19px;margin-bottom:24px;color:#fff;font-size:45px}
+/*상단4개*/
+.prv{border-top:2px solid #d5d5d5}
+.age{float:left;width:43.3%;b order:1px dashed green}
+.birth{font-size:34px}
+.have{float:left;width:43.3%;margin-left:25px}
+.like{float:left;width:43.3%;margin-top:44px}
+.hate{float:left;width:43.3%;margin:44px 0 0 25px}	
+/*우측 이미지*/
+.iam_all{margin-top:70px;position:static;/*position:absolute;top:-14px;right:2px;*/z-index:3px}
+.iam_all>img{max-width:100%;height:auto;}
+.iam_img{float:right;width:449px;height:auto}	
+/*커리어*/
+.career{width:100%;border-top:2px solid #d5d5d5;padding-top:24px;font-size:17px;color:#5d5d5e;background-image:url('../images/iam_img_bottom.png') 50%,50%}
+.point_line{z-index:100;width:181px;height:181px;background:url(../img/point_line.png);position:absolute;top:1270px;left:2px;}
+.c_date{font-size:22px}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 04 CONTACT :Contact Area 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+#contact_contents-wrap{margin-left:0px;padding:20px}
+.contact{float:none;display:inline-block;overflow:hidden;max-width:100%;height:auto;padding-bottom:0px}
+.number{max-width:100%;height:auto;margin:119px auto 0px auto}
+.number>img{max-width:100%;height:auto}
+}
+
+
+
+
+@media all and (max-width:768px) {
+#contents-wrap{margin:20px;padding:60px 10px;/*border:1px dashed red;*/}
+* [class*="p_box"]{float:left;width:330px;margin-right:17px;margin-bottom:16px}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 02 ABOUT :커리어영역   〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 04 CONTACT :Contact Area 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+}
+
+
+
+@media all and (max-width:640px) {
+#contents-wrap{padding:60px 0px;/*border:1px dashed lightblue;*/}
+* [class*="p_box"]{float:none;width:100%;}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 02 ABOUT :커리어영역   〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+/*상단4개*/
+.prv{border-top:2px solid rgba(93, 93, 93, 0.2);}
+.age{float:none;width:90%;margin:0px 20px 0px 0px;padding:0px 20px 0 0px;/*border-top:2px solid #d5d5d5;*/}
+.birth{font-size:32px}
+.have{float:none;width:90%;margin-left:0px;margin-top:110px;}
+.like{float:none;width:90%;margin-top:62px}
+.hate{float:none;width:90%;margin:62px 0 0 0px}	
+/*커리어*/
+.career{width:100%;border-top:2px solid rgba(93, 93, 93, 0.2);padding-top:24px;font-size:15px;color:#5d5d5e;background-image:url('../images/iam_img_bottom.png') 50%,50%}
+.point_line{position:absolute;top:451px;left:2px;width:181px;height:181px;background:url(../img/point_line.png);position:absolute;top:1744px;left:2px;}
+.career_list{margin-top:28px;line-height:19px}
+.c_date{font-weight:bold;margin-bottom:8px;font-size:18px;color:#6d6d6d}
+
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 04 CONTACT :Contact Area 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+}
+
+
+
+
+@media all and (max-width:360px) {
+#contents-wrap{margin:20px;padding:60px 0px;/*border:1px dashed lightblue;*/}
+* [class*="p_box"]{float:none;width:100%;}
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 02 ABOUT :커리어영역   〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+#about_contents-wrap{margin:60px 0px;padding-bottom:70px;}
+.about{margin-left:20px}
+/*개인정보*/
+.private_info{max-width:96vw;float:none;display:inline-block;font-size:16px;margin-top:26px;b rder:1px dashed yellow;}
+.private_info h3{margin-top:19px;margin-bottom:24px;color:#fff;font-size:45px;font-family:helveticaNeue}
+/*상단4개*/
+.prv{border-top:2px solid rgba(93, 93, 93, 0.2);}
+.age{float:none;width:90%;margin:0px 20px 0px 0px;padding:0px 20px 0 0px}
+.birth{font-size:32px}
+.have{float:none;width:90%;margin-left:0px;margin-top:110px;}
+.like{float:none;width:90%;margin-top:62px}
+.hate{float:none;width:90%;margin:62px 0 0 0px}	
+/*우측 이미지*/
+.iam_all{position:static;/*position:absolute;top:-14px;right:2px;*/z-index:3px}
+.iam_all>img{max-width:100%;height:auto;}
+.iam_img{float:none;}	
+/*커리어*/
+.career{border-top:2px solid rgba(93, 93, 93, 0.2);padding-top:24px;font-size:14px;}
+.point_line{display:none}
+
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓 04 CONTACT :Contact Area 〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+}
+
+
+
+
+
+/* ============================================= scrollmotion_XXX ============================================= */
+.js-scrollmotion_up { opacity: 0;}
+[class*="js-scrollmotion_"][class*="scrollmotion_"] {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay1 {
+  transition-delay: 0.1s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay2 {
+  transition-delay: 0.2s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay3 {
+  transition-delay: 0.3s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay4 {
+  transition-delay: 0.4s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay5 {
+  transition-delay: 0.5s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay6 {
+  transition-delay: 0.6s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay7 {
+  transition-delay: 0.7s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay8 {
+  transition-delay: 0.8s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay9 {
+  transition-delay: 0.9s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay10 {
+  transition-delay: 1.0s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc1 {
+  transition-delay: 0.1s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc2 {
+  transition-delay: 0.2s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc3 {
+  transition-delay: 0.3s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc4 {
+  transition-delay: 0.4s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc5 {
+  transition-delay: 0.5s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc6 {
+  transition-delay: 0.6s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc7 {
+  transition-delay: 0.7s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc8 {
+  transition-delay: 0.8s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc9 {
+  transition-delay: 0.9s;
+}
+
+[class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc10 {
+  transition-delay: 1.0s;
+}
+
+@media all and (max-width: 1023px) {
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc1 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc2 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc3 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc4 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc5 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc6 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc7 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc8 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc9 {
+    transition-delay: 0s;
+  }
+  [class*="js-scrollmotion_"][class*="scrollmotion_"].scrolldelay_pc10 {
+    transition-delay: 0s;
+  }
+}
+
+.js-scrollmotion_up {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-transform: translateY(60px);
+  -o-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  -webkit-transform: translateY(60px);
+  transform: translateY(60px);
+}
+
+.js-scrollmotion_up.scrollmotion_up {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.js-scrollmotion_left {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+}
+
+.js-scrollmotion_left.scrollmotion_left {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.js-scrollmotion_right {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-transform: translateX(50px);
+  -o-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+
+.js-scrollmotion_right.scrollmotion_right {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.js-scrollmotion_zoomin {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -moz-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.js-scrollmotion_zoomin.scrollmotion_zoomin {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
