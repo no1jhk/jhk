@@ -33,13 +33,7 @@
 
 
 
-
-
-
-
 ## 파일업로드
-### index.js 실행
-`npm start`
 
-### d?.js
-`node d?.js`
+### sftp_up.js
+`node sftp_up.js`
