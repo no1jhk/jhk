@@ -33,7 +33,7 @@
       var _list_template = '\
         <ul id="boxlist"> \
           <li v-for="(item, index) in mainList" :key="item.id" class="item p_box02 js-scrollmotion_up" > \
-            <a class="main_item-link" :href="(detal_link + item.id)"> \
+            <a class="main_item-link" :href="(detail_link + item.id)"> \
               <div class="box_title"> \
                 <p class="b_tit">{{ item.title }}</p> \
                 <p class="b_txt">{{ item.title_e }}</p> \
@@ -65,7 +65,7 @@
             data : function() {
               return {
                 mainList: mainData,
-                detal_link : "/detal/detal_page.html?page="
+                detail_link : "/detail/detail_page.html?page="
               }
             },
 
