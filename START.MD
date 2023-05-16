@@ -12,7 +12,7 @@
     git clone https://github.com/no1jhk/jhk.git
   ```
 - 소스 받기 : 공유아이콘 > `…`아이콘 > `Pull`
-- 소스 올리기 : 공유아이콘 > 메시지 작성 > `Commit` > `Push`
+- 소스 올리기 : 공유아이콘 > 메시지 작성 > `Commit` > `Sync Changes`
 
 ## VScode 
 - 공유 아이콘 클릭후 깃 사이트 연결.
