@@ -17,8 +17,15 @@
 ## VScode 
 - 공유 아이콘 클릭후 깃 사이트 연결.
 
+## VScode 플러그인 설치
+- Live Server
+- Git Graph
+- Auto Rename Tag
+- EJS Language Support
+- ESLint
+
 ## gulp 세팅
-- 터미널창 : 모듈설치
+- 터미널창(ctrl+`) : 모듈설치
   ``` bash
     npm i
   ```
